@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_height="50dp"
+    android:layout_width="wrap_content"
+    app:strokeWidth="0.5dp"
+    android:elevation="50dp"
+    >
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:text="Hey There !!"
+        android:textStyle="normal|bold"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+</com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/selectedCourse"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:visibility="gone"
+            />  <TextView
+            android:id="@+id/selectedYear"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:visibility="gone"
+            />  <TextView
+            android:id="@+id/selectedBranch"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:visibility="gone"
+            />
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        >
+
+    <!-- Spinner Element -->
+    <Spinner
+
+        android:id="@+id/yearSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        >
+
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/branchSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="300dp"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:backgroundTint="#670478"
+        android:textColor="#fff"
+        android:text="Proceed"
+        />
+</LinearLayout>
